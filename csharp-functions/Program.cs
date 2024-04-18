@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            int[] numList = { 2, 6, 7, 5, 3, 9 };
+            Console.Write("Inserire la lunghezza dell'array ");
+            int arrayLength = Convert.ToInt32(Console.ReadLine());
+
+            int[] numList = new int[arrayLength];
+
+            for(int i = 0; i < arrayLength; i++)
+            {
+                Console.Write(i+1 + ". ");
+                numList[i] = Convert.ToInt32(Console.ReadLine());
+            }
 
             void StampaArray(int[] array)
             {
@@ -58,10 +67,7 @@
             Console.Write($"\nEcco qui la somma di tutti i numeri della lista originale: {sommaElementiArray(numList)}");
 
             Console.Write($"\n\nE invece ecco qua la somma di tutti gli elementi al quadrato: {sommaElementiArray(ElevaArrayAlQuadrato(numList))}");
-            
-            //BONUS
-
-
+           
         }
     }
 }
