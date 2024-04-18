@@ -47,11 +47,21 @@
                 return somma;
             }
 
+            Console.Write("Ecco il nostro Array: ");
             StampaArray(numList);
-            Console.WriteLine(Quadrato(9));
-            int[] arrayAlQuadrato = ElevaArrayAlQuadrato(numList);
-            StampaArray(arrayAlQuadrato);
-            Console.WriteLine(sommaElementiArray(numList));
+
+            Console.Write("\nBene, ora vediamo l'array elevato completamente al quadrato: ");
+            StampaArray(ElevaArrayAlQuadrato(numList));
+            Console.Write("E possiamo notare che il nostro array è rimasto invariato: ");
+            StampaArray(numList);
+
+            Console.Write($"\nEcco qui la somma di tutti i numeri della lista originale: {sommaElementiArray(numList)}");
+
+            Console.Write($"\n\nE invece ecco qua la somma di tutti gli elementi al quadrato: {sommaElementiArray(ElevaArrayAlQuadrato(numList))}");
+            //Console.WriteLine(Quadrato(9));
+            //int[] arrayAlQuadrato = ElevaArrayAlQuadrato(numList);
+            //StampaArray(arrayAlQuadrato);
+            //Console.WriteLine(sommaElementiArray(numList));
         }
     }
 }
