@@ -31,7 +31,7 @@
 
                 for(int i = 0;i < array.Length;i++)
                 {
-                    newArray[i] = array[i] * array[i];
+                    newArray[i] = Quadrato(array[i]);
                 }
 
                 return newArray;
@@ -58,10 +58,10 @@
             Console.Write($"\nEcco qui la somma di tutti i numeri della lista originale: {sommaElementiArray(numList)}");
 
             Console.Write($"\n\nE invece ecco qua la somma di tutti gli elementi al quadrato: {sommaElementiArray(ElevaArrayAlQuadrato(numList))}");
-            //Console.WriteLine(Quadrato(9));
-            //int[] arrayAlQuadrato = ElevaArrayAlQuadrato(numList);
-            //StampaArray(arrayAlQuadrato);
-            //Console.WriteLine(sommaElementiArray(numList));
+            
+            //BONUS
+
+
         }
     }
 }
